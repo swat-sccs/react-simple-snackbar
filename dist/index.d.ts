@@ -17,14 +17,12 @@ declare module '@swat-sccs/react-simple-snackbar' {
      */
     type CloseSnackbar = () => void;
 
-    export type SnackbarPosition = 'top-left' | 'top-center' | 'top-right' | 'bottom-left' | 'bottom-center' | 'bottom-right';
-
     export interface SnackbarOptions {
 
         /**
          * A custom position for your Snackbar. The default value is bottom-center
          */
-        position?: SnackbarPosition;
+        position?: 'top-left' | 'top-center' | 'top-right' | 'bottom-left' | 'bottom-center' | 'bottom-right';
 
         /**
          * A style object with camelCased properties and string values. These styles are applied to the Snackbar itself.
