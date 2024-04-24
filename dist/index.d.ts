@@ -4,7 +4,7 @@ declare module '@swat-sccs/react-simple-snackbar' {
         children?: React.Component | React.Component[];
     };
 
-    export function SnackbarProvider(props: SnackbarProviderProps): React.Provider<SnackbarProviderProps>;
+    export function SnackbarProvider(props: SnackbarProviderProps): ReactNode;
 
     /**
      * @argument node The node you want to show into the Snackbar.
