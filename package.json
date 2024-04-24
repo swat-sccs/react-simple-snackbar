@@ -1,6 +1,6 @@
 {
     "name": "@swat-sccs/react-simple-snackbar",
-    "version": "2.0.9",
+    "version": "2.1.0",
     "description": "A really simple React snackbar component",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",

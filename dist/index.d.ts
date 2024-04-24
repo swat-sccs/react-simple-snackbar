@@ -1,7 +1,9 @@
+import { ReactElement } from "react";
+
 declare module '@swat-sccs/react-simple-snackbar' {
 
     export type SnackbarProviderProps = {
-        children?: React.Component | React.Component[];
+        children?: React.Component | React.Component[] | ReactElement | ReactElement[];
     };
 
     export function SnackbarProvider(props: SnackbarProviderProps): ReactNode;
