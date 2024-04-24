@@ -61,6 +61,8 @@ export function SnackbarProvider({ children }) {
         setOpen(false)
     }
 
+    const nodeRef = React.useRef(null);
+
     // Returns the Provider that must wrap the application
     return (
         <SnackbarContext.Provider value={{ openSnackbar, closeSnackbar }}>
@@ -70,6 +72,7 @@ export function SnackbarProvider({ children }) {
             <CSSTransition
                 in={open}
                 timeout={150}
+                nodeRef={nodeRef}
                 mountOnEnter
                 unmountOnExit
                 // Sets timeout to close the snackbar
@@ -89,7 +92,7 @@ export function SnackbarProvider({ children }) {
                 }}
             >
                 {/* This div will be rendered with CSSTransition classNames */}
-                <div>
+                <div ref={nodeRef}>
                     <div className={styles.snackbar} style={customStyles}>
                         {/* Snackbar's text */}
                         <div className={styles.snackbar__text}>{text}</div>
