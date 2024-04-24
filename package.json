@@ -1,100 +1,100 @@
 {
-    "name": "react-simple-snackbar",
-    "version": "1.1.11",
-    "description": "A really simple React snackbar component",
-    "main": "dist/index.js",
-    "types": "./types.d.ts",
-    "module": "dist/index.es.js",
-    "type": "module",
-    "jsnext:main": "dist/index.es.js",
-    "files": [
-        "dist"
+  "name": "@swat-sccs/react-simple-snackbar",
+  "version": "2.0.0",
+  "description": "A really simple React snackbar component",
+  "main": "dist/index.js",
+  "types": "./types.d.ts",
+  "module": "dist/index.es.js",
+  "type": "module",
+  "jsnext:main": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "rollup -c -w",
+    "build": "NODE_ENV=production rollup -c",
+    "build:dev": "rollup -c",
+    "test": "jest",
+    "test:dev": "jest --watch",
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "predeploy": "npm run build && cd site && npm install && npm run build",
+    "deploy": "gh-pages -d site/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evandromacedo/react-simple-snackbar.git"
+  },
+  "keywords": [
+    "react-simple-snackbar",
+    "react",
+    "simple",
+    "snackbar",
+    "component",
+    "hooks",
+    "hoc",
+    "high-order-component",
+    "alert",
+    "notification",
+    "message",
+    "toast",
+    "javascript"
+  ],
+  "author": "Evandro Macedo <evandro.hcm@gmail.com> (https://github.com/evandromacedo)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evandromacedo/react-simple-snackbar/issues"
+  },
+  "homepage": "https://evandromacedo.github.io/react-simple-snackbar",
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.24.3",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-react": "^7.24.1",
+    "autoprefixer": "^10.4.19",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^29.7.0",
+    "coveralls": "^3.1.1",
+    "enzyme": "^3.11.0",
+    "@cfaester/enzyme-adapter-react-18": "^0.7.1",
+    "enzyme-to-json": "^3.6.2",
+    "eslint": "^8.0.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "gh-pages": "^6.1.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "minimist": ">=1.2.8",
+    "prettier": "^3.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^4.16.4",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup-plugin-postcss": "^4.0.2",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-url": "^8.0.2",
+    "serialize-javascript": "^6.0.2"
+  },
+  "peerDependencies": {
+    "react": "18.x",
+    "react-dom": "18.x"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
     ],
-    "scripts": {
-        "start": "rollup -c -w",
-        "build": "NODE_ENV=production rollup -c",
-        "build:dev": "rollup -c",
-        "test": "jest",
-        "test:dev": "jest --watch",
-        "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
-        "predeploy": "npm run build && cd site && npm install && npm run build",
-        "deploy": "gh-pages -d site/dist"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/evandromacedo/react-simple-snackbar.git"
-    },
-    "keywords": [
-        "react-simple-snackbar",
-        "react",
-        "simple",
-        "snackbar",
-        "component",
-        "hooks",
-        "hoc",
-        "high-order-component",
-        "alert",
-        "notification",
-        "message",
-        "toast",
-        "javascript"
-    ],
-    "author": "Evandro Macedo <evandro.hcm@gmail.com> (https://github.com/evandromacedo)",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/evandromacedo/react-simple-snackbar/issues"
-    },
-    "homepage": "https://evandromacedo.github.io/react-simple-snackbar",
-    "devDependencies": {
-        "@babel/core": "^7.24.4",
-        "@babel/plugin-proposal-class-properties": "^7.13.0",
-        "@babel/plugin-transform-runtime": "^7.24.3",
-        "@babel/preset-env": "^7.24.4",
-        "@babel/preset-react": "^7.24.1",
-        "autoprefixer": "^10.4.19",
-        "babel-eslint": "^10.1.0",
-        "babel-jest": "^29.7.0",
-        "coveralls": "^3.1.1",
-        "enzyme": "^3.11.0",
-        "@cfaester/enzyme-adapter-react-18": "^0.7.1",
-        "enzyme-to-json": "^3.6.2",
-        "eslint": "^8.0.0",
-        "eslint-config-standard": "^17.1.0",
-        "eslint-plugin-import": "^2.29.1",
-        "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-promise": "^6.1.1",
-        "eslint-plugin-react": "^7.34.1",
-        "eslint-plugin-standard": "^4.1.0",
-        "gh-pages": "^6.1.1",
-        "identity-obj-proxy": "^3.0.0",
-        "jest": "^29.7.0",
-        "minimist": ">=1.2.8",
-        "prettier": "^3.2.5",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "rollup": "^4.16.4",
-        "@rollup/plugin-babel": "^6.0.4",
-        "@rollup/plugin-commonjs": "^25.0.7",
-        "@rollup/plugin-node-resolve": "^15.2.3",
-        "rollup-plugin-postcss": "^4.0.2",
-        "@rollup/plugin-terser": "^0.4.4",
-        "@rollup/plugin-url": "^8.0.2",
-        "serialize-javascript": "^6.0.2"
-    },
-    "peerDependencies": {
-        "react": "18.x",
-        "react-dom": "18.x"
-    },
-    "jest": {
-        "setupFilesAfterEnv": [
-            "<rootDir>/setupTests.js"
-        ],
-        "moduleNameMapper": {
-            "\\.(css|less)$": "identity-obj-proxy"
-        }
-    },
-    "dependencies": {
-        "@babel/runtime": "^7.24.4",
-        "react-transition-group": "^4.4.5"
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
     }
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.24.4",
+    "react-transition-group": "^4.4.5"
+  }
 }
