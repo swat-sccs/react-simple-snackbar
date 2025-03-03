@@ -23,16 +23,6 @@
       alt="Build Status"
     />
   </a>
-  <a
-    href="https://coveralls.io/github/evandromacedo/react-simple-snackbar?branch=master"
-    title="Coverage Status"
-    target="blank"
-  >
-    <img
-      src="https://coveralls.io/repos/github/evandromacedo/react-simple-snackbar/badge.svg?branch=master"
-      alt="Coverage Status"
-    />
-  </a>
   <a href="#" title="Gzipped size">
     <img
       src="https://img.badgesize.io/evandromacedo/react-simple-snackbar/master/dist/index.js.svg?compression=gzip"
